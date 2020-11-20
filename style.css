@@ -3,6 +3,11 @@
     /* --white: #ffffff; */
 }
 
+@font-face {
+    font-family: KrungthaiFast-Regular;
+    src: url(asset/font/KrungthaiFast.ttf);
+}
+
 body {
     min-height: 100vh;
     font-family: KrungthaiFast-Regular;
@@ -45,4 +50,19 @@ hr.style1 {
 #logo-text {
     color: var(--blue);
     ;
+}
+
+/* For mobile: */
+#col_filter{
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    #col_filter{
+        display: inline;
+    }
+    #icon-filter{
+        display: none;
+    }
 }

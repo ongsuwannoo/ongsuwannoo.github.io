@@ -64,6 +64,9 @@ function createPriceRange(arr) {
 }
 
 function createSubCatagories(obj) {
+    let selectSearch = $("#select-search");
+    selectSearch[0].innerText = obj.name;
+
     let priceRanges = $("#list-priceRange").empty();
 
     let arr = obj['subcategories'];
